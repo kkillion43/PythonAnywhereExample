@@ -19,7 +19,7 @@ from thisApp import views
 
 
 urlpatterns = [
-    path('index/', views.index, name='index'),
-    path('thisApp/', include('thisApp.urls')),
-    path('admin/', admin.site.urls),
+    path('/index/', views.index, name='index'),
+    path('/thisApp/', include('thisApp.urls')),
+    path('/admin/', admin.site.urls),
 ]
